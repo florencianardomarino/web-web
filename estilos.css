@@ -44,14 +44,15 @@ a {
 
 #banner {
     width: 100%;
-    height: 500px; /* BORRAR Y PONER AUTO */
+    height: 500px;
+    /* BORRAR Y PONER AUTO */
     background-color: yellowgreen;
 }
 
-.info-imagen{
+.info-imagen {
     /* BORRAR CUANDO SE PONGA LA IMAGEN CORRECTA */
     width: 150px;
-    height: 150px; 
+    height: 150px;
 }
 
 #nosotros {
@@ -90,6 +91,7 @@ a {
     width: 100%;
     height: auto;
 }
+
 .slider {
     width: 90%;
     max-width: 400px;
@@ -105,23 +107,42 @@ a {
 
 @keyframes slider-animation {
     0% {
-        transform: translateX(0);
+        transform: translateX(25);
     }
+
     25% {
         transform: translateX(-25%);
     }
+
     50% {
         transform: translateX(-50%);
     }
+
     75% {
         transform: translateX(-25%);
     }
+
     100% {
-        transform: translateX(0);
+        transform: translateX(25);
     }
 }
 
-footer{
+#seccion5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#seccion5 ul {
+    display: flex;
+}
+
+#seccion5 ul li p {
+    margin: 5px 0px;
+}
+
+footer {
     height: 400px;
     background-color: black;
     margin-top: 40px;
@@ -131,7 +152,7 @@ footer{
 @media screen and (max-width: 768px) {
     #barra ul {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -143,7 +164,8 @@ footer{
         width: 100%;
     }
 
-    #abrir img, #cerrar img {
+    #abrir img,
+    #cerrar img {
         width: 25px;
         height: auto;
     }
@@ -157,15 +179,39 @@ footer{
         display: none;
     }
 
-    #abrir:target ~ #cerrar {
+    #abrir:target~#cerrar {
         display: block;
     }
 
-    #abrir:target ~ #barra {
+    #abrir:target~#barra {
         top: 55px;
     }
 
     #nosotros ul li {
         width: 45%;
     }
+
+    #seccion5 ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px auto;
+    }
+
+    #seccion5 ul li {
+        width: 100%;
+    }
+
+    #seccion5 ul li img,
+    #seccion5 ul li p {
+        width: 100%;
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:980px) {
+
+}
+
+@media screen and (min-width: 981px){
+
 }
