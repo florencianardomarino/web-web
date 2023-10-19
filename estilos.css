@@ -209,9 +209,34 @@ footer {
 }
 
 @media screen and (min-width: 769px) and (max-width:980px) {
+    #abrir,
+    #cerrar {
+        display: none;
+    }
 
+    #barra ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #barra ul li {
+        margin: 0px 5px;
+    }
+    #seccion5 ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #seccion5 ul li img,
+    #seccion5 ul li p {
+        width: 100%;
+        max-width: 550px;
+        margin: 10px 0px;
+    }
 }
 
-@media screen and (min-width: 981px){
 
-}
+
+@media screen and (min-width: 981px) {}
